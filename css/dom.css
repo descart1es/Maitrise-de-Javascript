@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+  margin-left: 10px;
+  padding: 10px;
+}
+h1{
+  margin-left: 100px;
+}
+
+.contactform{
+	padding: 20px;
+  
+	background: #fff;
+	box-shadow: 0px 0px 50px rgba(222, 221, 221, 0.8);
+	max-width: 500px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-left: 25px;
+	border-radius: 20px;
+  margin-bottom: 30px;
+
+}
+.contactform .inputboite{
+	width: 100%;
+  height: 30px;
+  border-radius: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.contactform h2{
+	color: #111;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+	width: 100%;
+	border:1px solid #555;
+	padding: 15px;
+	color: rgb(101, 97, 97);
+	font-size: 16px;
+	font width: 300PX;
+	
+	border-radius: 5px;
+}
+
+
+.tbl{
+  margin-left: -60px;
+  margin-top: 60px;
+  
+}
+.table{
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+  margin: 0px;
+  
+
+}
+/*@media (max-width: 480px){
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper{
+  margin-left: 10px;
+  padding: 10px;
+  }
+  h1{
+  margin-left: 100px;
+  }
+  
+  .contactform{
+  padding: 20px;
+  
+  background: #fff;
+  box-shadow: 0px 0px 50px rgba(222, 221, 221, 0.8);
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 25px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  
+  }
+  .contactform .inputboite{
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  }
+  .contactform h2{
+  color: #111;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  }
+  .contactform .inputboite input,
+  .contactform .inputboite textarea{
+  width: 100%;
+  border:1px solid #555;
+  padding: 15px;
+  color: rgb(101, 97, 97);
+  font-size: 16px;
+  font width: 300PX;
+  
+  border-radius: 5px;
+  }
+  
+  
+  .tbl{
+  margin-left: -60px;
+  margin-top: 60px;
+  
+  }
+  .table{
+  margin: 0px;
+  padding: 0px;
+  }
+  .container{
+  margin: 0px;
+  
+  
+  }
+  
+
+}
+ 
+
