@@ -5,7 +5,7 @@ document.getElementById('acceptcookie').addEventListener("click", () =>{
 let d = new Date();
 d.setMinutes( 2 +  d.getMinutes());
 
-document.cookie = "myCookieName=thisIsMyCookie; expires = " + d +";";
+document.cookie = "myCookieName=thisIsMyCookie; expires = " + d +";"
 popUp.classList.add("hide");
 popUp.classList.remove("show");
 
@@ -28,7 +28,7 @@ popUp.classList.remove("show");
  window.onload = () => {
     setTimeout(()=>{
         checkCookie();
-    },2000);
+    }, 2000);
  }
  
 /* window.onload = () =>{

@@ -1,83 +1,78 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: "Poppins", sans-serif;
 
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
 }
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 35px;
+  min-height: 100vh;
+  background: #343F4F;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+.wrapper .carousel{
+  white-space: nowrap; 
+  overflow: hidden;
+  font-size: 0px;
+  cursor: pointer;
+  scroll-behavior: smooth;
+
 }
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
+.carousel .dragging{
+  cursor: grab;
+  scroll-behavior: auto;
 }
+.carousel .dragging img{
+    pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  margin-left: 14px;
+  width: calc(100% / 3);
 
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+}
+.wrapper i{
+  top: 50%;
+  background-color: #fff;
+  height: 46px;
+  width: 45px;
+  font-size: 1.2rem;
+  line-height: 46px;
+  border-radius: 50%;
   text-align: center;
+  position: absolute;
+  transform: translateY(-50%);
 }
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+.wrapper{
+  max-width: 1200px;
+  position: relative;
+
 }
-/* rtl:end:ignore */
+.wrapper i:first-child{
+  left: -23px;
+  display: none;
 
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
+.wrapper i:last-child{
+  right: -23px;
 
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-  letter-spacing: -.05rem;
 }
-
-/* rtl:end:remove */
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+.carousel img:first-child{
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
   }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
+  
 }
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
   }
+  
 }

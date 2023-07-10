@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cookie4.css">
+    <title>Cookie 4</title>
+</head>
+<body>
+        <div class="wrapper">
+       <div class="content">
+        <header>Cookies Consent</header>
+        <p>This website use cookies to ensure you get the best experience on our website </p>
+
+
+        <div class="buttons">
+            <button class="item">I understand</button>
+            <a href="">Learn more</a>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+
+      const cookieBox = document.querySelector(".wrapper");
+
+      acceptBtn = cookieBox.querySelector(".buttons button");
+
+      acceptBtn.onclick = ()=>{
+        document.cookie = "cookieBy=CodingNepal; max-age="+60*60*24*30;
+        if(document.cookie){
+            cookieBox.classList.add("hide")
+        }else{
+            alert("cookie can't be set!")
+        }
+      }
+
+    </script>
+</body>
+</html>
